@@ -1,5 +1,5 @@
 :root {
-  --bg-color: #033161;
+  --bg-color: #190d43;
   --font-color: #f3f3f4;
 }
 [data-theme="dark"] {
@@ -77,9 +77,9 @@ body {
   margin: 0 auto;
 }
 h1 {
-  color: var(--font-color);
-  font-size: 26px;
-  top: 10px;
+  color: #3c6fc7;
+  font-size: 55px;
+  margin-top: 1px;
 }
 h2 {
   color: var(--font-color);
@@ -169,7 +169,7 @@ a {
   margin-bottom: 15px;
 }
 .card {
-  background-color: #fff;
+  background-color: #0a3279;
   line-height: 25px;
   cursor: pointer;
   text-align: center;
@@ -327,15 +327,7 @@ br {
   user-select: none;
   pointer-events: none;
 }
-.search {
-  border-radius: 8px;
-  outline: none;
-  border: 0;
-  padding: 4px;
-  font-size: 12pt;
-  margin-top: 5px;
-  size: 9;
-}
+
 .lazyLoad {
   width: 100%;
   opacity: 0;
