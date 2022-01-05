@@ -104,41 +104,4 @@ document.addEventListener("DOMContentLoaded", function () {
       window.addEventListener("orientationChange", r);
   }
 });
-const toggleSwitch = document.querySelector(
-  '.theme-switch input[name="theme"]'
-);
-const currentTheme = localStorage.getItem("theme");
-if (currentTheme) {
-  document.documentElement.setAttribute("data-theme", currentTheme);
-  if (currentTheme === "dark") {
-    toggleSwitch.checked = true;
-  }
-}
-function switchTheme(e) {
-  if (e.target.checked) {
-    document.documentElement.setAttribute("data-theme", "dark");
-    localStorage.setItem("theme", "dark");
-  } else {
-    document.documentElement.setAttribute("data-theme", "light");
-    localStorage.setItem("theme", "light");
-  }
-}
-toggleSwitch.addEventListener("change", switchTheme, false);
-const blockSwitch = document.querySelector('.theme-switch input[name="block"]');
-const currentBlock = localStorage.getItem("block");
-if (currentBlock) {
-  document.documentElement.setAttribute("data-block", currentBlock);
-  if (currentBlock === "adult") {
-    blockSwitch.checked = true;
-  }
-}
-function switchblock(e) {
-  if (e.target.checked) {
-    document.documentElement.setAttribute("data-block", "adult");
-    localStorage.setItem("block", "adult");
-  } else {
-    document.documentElement.setAttribute("data-block", "no");
-    localStorage.setItem("block", "no");
-  }
-}
-blockSwitch.addEventListener("change", switchblock, false);
+
