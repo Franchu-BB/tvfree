@@ -1,3 +1,7 @@
+:root {
+    --bg-color: #190d43;
+    --font-color: #f3f3f4;
+  }
 .opciones {
     text-align: left;
   }
